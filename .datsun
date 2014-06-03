@@ -1,0 +1,15 @@
+# Git help
+
+# Goes to the root of the current git repo
+alias gtop='cd "$(git rev-parse --show-toplevel)"'
+
+# One size fits all spray on pants
+alias gsub='git submodule sync; git submodule update --init --recursive'
+
+# Git autocompletion
+if [ -f ~/git-completion.bash ]; then
+  . ~/git-completion.bash
+fi
+
+# Furry
+alias fur='git'
